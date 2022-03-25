@@ -73,7 +73,7 @@ body {
     color: #fff;
 }
 .nav .logo {
-    background-image: url('/images/logo_w\(null\).svg');
+    background-image: url('https://raw.githubusercontent.com/Cliff1213/hexschool-rwd-final/a942ec21086c30e15c96378f1e6f214cf480a5e2/images/logo_w(null).svg');
     background-repeat: no-repeat;
     background-position: center;
     display: block;
