@@ -1,0 +1,38 @@
+width=device-width, initial-scale=1  前者代表強制讓頁面寬度 = 裝置寬度（響應式必加），後者則是縮放比例倍數
+viewport 除了上述兩個參數，還有 device-height（畫面高度）、minimum-scale（最小可縮放比例）、maximum-scale（最大可縮放比例）、user-scalable（使用者是否可進行縮放）
+
+media qurey 觀念：
+使用 max-width 從 PC 版開始做到手機板，media 設定寬度從大寫到小（PC > Pad > Mobile）
+使用 min-width 從 Mobile 版開始做到 PC 版。
+
+CSS 權重：
+HTML 標籤 1 分
+CSS 類別選擇器 10 分
+id 選擇器 100 分（不要使用 id 設定樣式）
+Element 1000 分
+!important 10000 分
+先看權重，再看順序
+如果擔心覆蓋後有問題，可直接複製前人的選擇器，並寫在該選擇器後面再自訂自己的樣式。
+
+*****網頁不可以出現 x 軸
+width = 固定寬度（會出現 x 軸） / max-width = 最大寬度（會自適應裝置寬度，不會出現 x 軸，用於 Desktop First。）
+除了 css reset 以外，建議加上下列語法：
+*,*::before,*::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }（目的使網頁圖片按照原始比例自適應寬度、高度，因此不會出現 x 軸）
+外層寬度使用 max-width，內層使用 %
+
+斷點:
+Pad 寬度為 768px，但在做 mobile 版 rwd 時可以使用以下設定，來避免同時套用到 moblie 以及 Pad：
+@media(max-width: 767px){ ... }，目的在於　768px 以下皆顯示 mobile 版型，如果設定 768px，則會在 Pad 版看到 moblie 版的版型。
+767px 是給手機看的而非平版
+
+header.header>.container
+.container { width: 960px; }
+
+rwd 需注意 desktop 小圖在 mobile 上放大會失真的問題。
+
+rwd 須注意 mobile 最小寬度 320px 的裝置上瀏覽是否有跑版。
+
+選單如果選項太多，在 mobile 上可以使用 Off Canvas 的設計方式。
+
+height: auto; 可使高度隨內容自適應延伸。
