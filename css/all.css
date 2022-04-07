@@ -126,6 +126,7 @@ body {
     .menu a {
         display: block;
         padding: 16px;
+        font-size: 14px;
     }
     .menu-show .menu {
         max-height: 500px;
