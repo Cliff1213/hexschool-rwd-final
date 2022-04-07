@@ -36,3 +36,5 @@ rwd 須注意 mobile 最小寬度 320px 的裝置上瀏覽是否有跑版。
 選單如果選項太多，在 mobile 上可以使用 Off Canvas 的設計方式。
 
 height: auto; 可使高度隨內容自適應延伸。
+
+form 似乎有預設的寬度，因此會影響內層 input 的寬度設定。
