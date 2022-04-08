@@ -54,6 +54,9 @@ body {
 .mx-auto {
     margin: 0 auto;
 }
+.mb-0 {
+    margin-bottom: 0 !important;
+}
 
 /* jquery */
 .showmenu {
@@ -321,6 +324,7 @@ body {
 .map-content label {
     font-size: 14px;
     line-height: 1.8;
+    cursor: pointer;
 }
 .map-content ul li:nth-child(-n+4) input {
     width: 100%;
@@ -334,7 +338,7 @@ body {
 .map-content input:focus {
     outline: none;
 }
-.vage input {
+.vage-group input {
     margin-right: 36px;
 }
 .map-btn input {
@@ -576,7 +580,7 @@ body {
 /* page login */
 .login {
     padding: 50px 24px;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 .login-title {
     text-align: center;
@@ -586,11 +590,14 @@ body {
 .login-title h3 {
     font-size: 48px;
 }
+.login-title p {
+    font-size: 20px;
+}
 .login-content {
     max-width: 300px;
     box-shadow: 2px 2px 5px #ccc;
     padding: 15px;
-    border-top: 3px solid #F56C23;
+    border-top: 4px solid #F56C23;
 }
 .login-content p {
     font-size: 18px;
@@ -665,6 +672,94 @@ body {
     }
 }
 
+/* page register */
+.register {
+    padding: 50px 24px;
+    line-height: 1.3;
+}
+.register .container {
+    max-width: 620px;
+}
+.register-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.register-title h3 {
+    font-size: 48px;
+}
+.register-title p {
+    font-size: 20px;
+}
+.register-content {
+    box-shadow: 2px 3px 4px #ccc;
+    padding: 15px;
+    border-top: 4px solid #FF5E45;
+}
+.register-content-title {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.terms {
+    width: 49%;
+}
+.register-content form {
+    width: 49%;
+}
+.register-content li label {
+    cursor: pointer;
+} 
+.register-content li input {
+    width: 100%;
+    border: 0px solid #fff;
+}
+.register-content li input:focus {
+    outline: none;
+}
+.register-content i {
+    margin-right: 4px;
+}
+.register-email, .register-password {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    padding: 6px 8px;
+    margin-bottom: 15px;
+}
+.account-exists {
+    font-size: 14px;
+    color: #FF5E45;
+}
+.account-exists:hover {
+    text-decoration: underline;
+}
+.register-btn {
+    border: none;
+    background: #F56C23;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 48px;
+    align-self: flex-end;
+}
+.register-btn:hover {
+    background: #ff5900;
+    cursor: pointer;
+}
+@media ( max-width: 414px ) {
+    .terms {
+        width: 100%;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ccc;
+    }
+    .register-content form {
+        width: 100%;
+    }
+}
+
 /* footer */
 .footer {
     padding: 50px 42px;
@@ -695,11 +790,20 @@ body {
 .icon-google {
     color: #DB4437;
 }
+.icon-google:hover {
+    color: #da2313;
+}
 .icon-twitter {
     color: #41ABE1;
 }
+.icon-twitter:hover {
+    color: #0e96da;
+}
 .icon-facebook {
     color: #3A5795;
+}
+.icon-facebook:hover {
+    color: #103991;
 }
 @media ( max-width: 768px ) {
     .footer {
