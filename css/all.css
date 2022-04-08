@@ -836,7 +836,7 @@ body {
     right: 20px;
     bottom: 20px;
 }
-@media ( max-width: 767px ) {
+@media ( max-width: 768px ) {
     .back2top {
         display: none;
     }
