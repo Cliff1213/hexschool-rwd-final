@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <meta name="description" content="六角學院 rwd 最終作業">
 
@@ -28,8 +28,8 @@
         <ul class="menu d-flex">
             <li><a class="text-white" href="index.html">首頁</a></li>
             <li><a class="text-white" href="cart.html">購物</a></li>
-            <li><a class="text-white" href="login.html">會員登入</a></li>
-            <li><a class="text-white" href="register.html">加入我們</a></li>
+            <li><a class="text-white" href="login.html">登入</a></li>
+            <li><a class="text-white" href="register.html">註冊</a></li>
         </ul>
 
         <a class="icon-mobile" href="#"><i class="fa-xl fa-solid fa-bars"></i></a>
@@ -43,7 +43,45 @@
         </div>
     </div>
 
-    
+    <!-- register -->
+    <div class="register text-brown bg-primary">
+        <div class="container mx-auto">
+            <div class="register-title">
+                <h3>六角西餐廳</h3>
+                <p>享受美食好味道</p>
+            </div>
+            <div class="register-content d-flex flex-wrap j-c-space-between">
+                <p class="register-content-title">REGISTER</p>
+                <div class="terms">
+                    <p>就是這樣條款：<br>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...</p>
+                </div>
+                <form action="#">
+                    <ul class="d-flex flex-column">
+                        <li>
+                            <label for="registerAcc">Email Address*</label>
+                            <div class="register-email d-flex a-i-center">
+                                <i class="fa-regular fa-sm fa-envelope"></i>
+                                <input type="text" name="register-acc" id="registerAcc" placeholder="設定您的帳號">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="registerPwd">Password*</label>
+                            <div class="register-password d-flex a-i-center">
+                                <i class="fa-solid fa-sm fa-lock"></i>
+                                <input type="password" name="register-pwd" id="registerPwd" placeholder="設定您的密碼">
+                            </div>
+                            <div class="register-password d-flex a-i-center mb-0">
+                                <i class="fa-solid fa-sm fa-lock"></i>
+                                <input type="password" name="register-pwd" id="registerPwd" placeholder="確認您的密碼">
+                            </div>
+                            <a class="account-exists" href="#">已經有帳號了？</a>
+                        </li>
+                        <button class="register-btn" type="button">註冊</button>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer class="footer bg-primary text-brown">
