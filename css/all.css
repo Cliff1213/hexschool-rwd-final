@@ -779,6 +779,9 @@ body {
     margin-left: 8px;
     width: 100%;
 }
+.footer-phone:hover, .footer-email:hover {
+    text-decoration: underline;
+}
 .communities {
     text-align: right;
 }
@@ -819,5 +822,22 @@ body {
     }
     .contact li {
         margin-bottom: 0;
+    }
+}
+
+/* backtop */
+.back2top {
+    width: 50px;
+    height: 50px;
+    color:#fff;
+    background: #F56C23;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+@media ( max-width: 767px ) {
+    .back2top {
+        display: none;
     }
 }
