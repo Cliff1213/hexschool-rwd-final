@@ -426,6 +426,7 @@ body {
 }
 .cart-search {
     border: 2px solid #3D1101;
+    background: #fff;
     width: 65%;
 }
 .cart-search input {
@@ -435,7 +436,6 @@ body {
 }
 .cart-search input:focus {
     outline: none;
-    background: #EFE9E7;
 }
 .cart-search a {
     padding: 5px 5px 3px 7px;
@@ -571,6 +571,83 @@ body {
     .item-img img {
         width: 100%;
     }
+}
+
+/* page login */
+.login {
+    padding: 50px 24px;
+    line-height: 1.4;
+}
+.login-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.login-title h3 {
+    font-size: 48px;
+}
+.login-content {
+    max-width: 300px;
+    box-shadow: 2px 2px 5px #ccc;
+    padding: 15px;
+    border-top: 3px solid #F56C23;
+}
+.login-content p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.login-content li {
+    margin-bottom: 15px;
+}
+.user-account, .user-password {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px 8px;
+    background: #fff;
+}
+.login-content i {
+    margin-right: 4px;
+}
+.login-content input {
+    display: block;
+    width: 100%;
+    border: 0px solid #fff;
+}
+.login-content input:focus {
+    outline: none;
+}
+.password-forget {
+    font-size: 14px;
+    color: #FF5E45;
+}
+.password-forget:hover {
+    text-decoration: underline;
+}
+.login-btn-group button {
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 6px 0;
+    width: 46%;
+    margin-top: 8px;
+}
+.login-btn-register {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+}
+.login-btn-register:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.login-btn-login {
+    background: #F56C23;
+    color: #fff;
+    cursor: pointer;
+}
+.login-btn-login:hover {
+    background: #ff5900;
 }
 
 /* footer */
