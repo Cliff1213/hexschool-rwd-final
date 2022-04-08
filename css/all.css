@@ -601,6 +601,9 @@ body {
 .login-content li {
     margin-bottom: 15px;
 }
+.login-content label {
+    cursor: pointer;
+}
 .user-account, .user-password {
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -625,6 +628,9 @@ body {
 .password-forget:hover {
     text-decoration: underline;
 }
+.login-btn-group {
+    margin-bottom: 0 !important;
+}
 .login-btn-group button {
     border: none;
     border-radius: 3px;
@@ -648,6 +654,15 @@ body {
 }
 .login-btn-login:hover {
     background: #ff5900;
+}
+@media ( max-width: 414px ) {
+    .login {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .login-content {
+        max-width: 100%;
+    }
 }
 
 /* footer */
