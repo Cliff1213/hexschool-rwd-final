@@ -743,6 +743,7 @@ body {
     border-radius: 3px;
     padding: 6px 48px;
     align-self: flex-end;
+    margin-top: 36px;
 }
 .register-btn:hover {
     background: #ff5900;
